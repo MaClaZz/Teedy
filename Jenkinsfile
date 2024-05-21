@@ -22,7 +22,7 @@ pipeline {
         stage('Upload image') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', '12112450') {
+                    docker.withRegistry('', '12112450') {
                         dockerImage.push("latest")
                     }
                 }
